@@ -1,0 +1,70 @@
+------  video:1 --------
+1. Error Type 
+2. Error handling theory
+3. error stack
+
+
+-------   video-2 ------
+1.Error pattern checker 
+2. instanceOf ZodError
+
+
+---------- video -3 ----------
+1. Zod error handling
+
+
+---------- video -4 ----------
+1. Refactor Error handler
+2. mongoose Error handling
+
+
+
+---------- video -5 ----------
+1. cast error/ ivalid id Error handling
+2. duplicate id Error handling
+3. Regex
+note: recap this video
+
+
+---------- video -6 ----------
+1. AppError handler
+2. Error handler
+3. UnhandledRejection 
+4. UncaughtException 
+
+
+---------- video -7 ----------
+1. raw serching
+2. Record -----> TypeScript
+3. Regular expression
+
+
+
+-------video-8 ---------
+1. filtering 
+2. sort
+3. limiting
+
+
+
+
+-------video-9 ---------
+1.pagination
+2. field limiting
+3. query.select ----- mongoose
+
+
+-------video-10 ---------
+
+-------video-11 ---------
+
+-------video-12 ---------
+
+
+
+
+
+
+
+
+
