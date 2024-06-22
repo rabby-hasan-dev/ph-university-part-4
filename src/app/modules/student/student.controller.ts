@@ -6,8 +6,8 @@ import { StudentSevices } from './student.service';
 
 
 const getSingleStudent = catchAsync(async (req, res) => {
-  const { studentId } = req.params;
-  const result = await StudentSevices.getSingleStudentFromDB(studentId);
+  const { id } = req.params;
+  const result = await StudentSevices.getSingleStudentFromDB(id);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
@@ -37,8 +37,8 @@ const getAllStudent = catchAsync(async (req, res) => {
 //  DELETE  SPECIFIC STUDENT DATA
 
 const deleteStudent = catchAsync(async (req, res) => {
-  const { studentId } = req.params;
-  const result = await StudentSevices.deleteStudentFromDB(studentId);
+  const { id } = req.params;
+  const result = await StudentSevices.deleteStudentFromDB(id);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     succcess: true,
@@ -49,9 +49,9 @@ const deleteStudent = catchAsync(async (req, res) => {
 
 //  UPDATE  SPECIFIC STUDENT DATA
 const updateStudent = catchAsync(async (req, res) => {
-  const { studentId } = req.params;
+  const { id } = req.params;
   const { student } = req.body;
-  const result = await StudentSevices.updateStudentFromDB(studentId
+  const result = await StudentSevices.updateStudentFromDB(id
     , student
   );
 

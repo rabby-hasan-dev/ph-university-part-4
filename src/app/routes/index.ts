@@ -1,4 +1,6 @@
 import { Router } from 'express';
+import { AdminRoutes } from '../modules/Admin/admin.route';
+import { FacultyRoutes } from '../modules/Faculty/faculty.route';
 import { academicDepartmentRoute } from '../modules/academicDepartment/academicDepartment.route';
 import { academicFacultyRoute } from '../modules/academicFaculty/academicFaculty.route';
 import { academicSemesterRoute } from '../modules/academicSemester/academicSemester.route';
@@ -17,6 +19,14 @@ const moduleRoutes = [
         route: studentRoutes,
     },
     {
+        path: '/faculties',
+        route: FacultyRoutes,
+    },
+    {
+        path: '/admins',
+        route: AdminRoutes,
+    },
+    {
         path: '/academic-semester',
         route: academicSemesterRoute,
     },
@@ -28,6 +38,8 @@ const moduleRoutes = [
         path: '/acdemic-department',
         route: academicDepartmentRoute,
     },
+
+
 ];
 
 moduleRoutes.forEach((routes) => router.use(routes.path, routes.route));
